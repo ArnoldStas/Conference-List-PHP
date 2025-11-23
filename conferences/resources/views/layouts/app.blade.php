@@ -12,7 +12,7 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #ff6600;">
         <div class="container">
 
             <a class="navbar-brand" href="{{ url('/') }}">

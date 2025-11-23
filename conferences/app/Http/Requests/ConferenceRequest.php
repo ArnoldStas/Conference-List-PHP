@@ -38,6 +38,17 @@ class ConferenceRequest extends FormRequest
             // 'string' - field must be a string
             // 'max:500' - address can be longer than title but still limited
             'address' => ['required', 'string', 'max:500'],
+
+            // Country field validation
+            'country' => ['required', 'string', 'max:255'],
+
+            // City field validation
+            'city' => ['required', 'string', 'max:255'],
+
+            // Participants count validation
+            // 'integer' - must be a whole number
+            // 'min:1' - must be at least 1 participant
+            'participants_count' => ['required', 'integer', 'min:1'],
         ];
     }
 
@@ -49,6 +60,10 @@ class ConferenceRequest extends FormRequest
             'date.required' => __('validation.required', ['attribute' => __('validation.attributes.date')]),
             'date.after' => __('validation.after', ['attribute' => __('validation.attributes.date'), 'date' => 'today']),
             'address.required' => __('validation.required', ['attribute' => __('validation.attributes.address')]),
+            'country.required' => __('validation.required', ['attribute' => __('validation.attributes.country')]),
+            'city.required' => __('validation.required', ['attribute' => __('validation.attributes.city')]),
+            'participants_count.required' => __('validation.required', ['attribute' => __('validation.attributes.participants_count')]),
+            'participants_count.min' => __('validation.min.numeric', ['attribute' => __('validation.attributes.participants_count'), 'min' => 1]),
         ];
     }
 }

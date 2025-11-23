@@ -17,7 +17,7 @@
             <h1>{{ __('messages.conferences_list') }}</h1>
 
             @auth
-                <a href="{{ route('conferences.create') }}" class="btn btn-primary">
+                <a href="{{ route('conferences.create') }}" class="btn text-white" style="background-color: #ff6600;">
                     <i class="bi bi-plus-circle"></i>
                     {{ __('messages.add_conference') }}
                 </a>
@@ -41,12 +41,19 @@
                             <div class="text-muted small">
                                 <span class="me-3">
                                     <strong>{{ __('messages.conference_date') }}:</strong>
-                                    
                                     {{ $conference->date->format('Y-m-d') }}
                                 </span>
+                                <span class="me-3">
+                                    <strong>{{ __('messages.city') }}:</strong>
+                                    {{ $conference->city }}
+                                </span>
+                                <span class="me-3">
+                                    <strong>{{ __('messages.country') }}:</strong>
+                                    {{ $conference->country }}
+                                </span>
                                 <span>
-                                    <strong>{{ __('messages.conference_address') }}:</strong>
-                                    {{ $conference->address }}
+                                    <strong>{{ __('messages.participants_count') }}:</strong>
+                                    {{ $conference->participants_count }}
                                 </span>
                             </div>
                         </div>

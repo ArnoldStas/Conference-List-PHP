@@ -3,7 +3,6 @@
 namespace Database\Seeders;
 
 use App\Models\Conference;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 class ConferenceSeeder extends Seeder
@@ -12,34 +11,49 @@ class ConferenceSeeder extends Seeder
     {
         $conferences = [
             [
-                'title' => 'International Web Development Conference 2025',
-                'description' => 'A comprehensive conference covering the latest trends in web development, including React, Vue.js, and Laravel. Join industry experts and network with fellow developers.',
+                'title' => 'Tarptautinė Internetinių Technologijų Konferencija 2025',
+                'description' => 'Išsami konferencija, apimanti naujausias internetinių technologijų tendencijas, įskaitant React, Vue.js ir Laravel. Prisijunkite prie pramonės ekspertų ir bendraukite su kolegomis programuotojais.',
                 'date' => '2025-03-15',
-                'address' => 'Vilnius Tech Park, Saulėtekio al. 15, Vilnius, Lithuania',
+                'address' => 'Vilniaus Technologijų Parkas, Saulėtekio al. 15',
+                'country' => 'Lietuva',
+                'city' => 'Vilnius',
+                'participants_count' => 500,
             ],
             [
-                'title' => 'PHP Developers Summit',
-                'description' => 'Annual gathering of PHP developers to discuss best practices, new features in PHP 8.3, and framework updates. Includes workshops and hands-on sessions.',
+                'title' => 'PHP Programuotojų Susitikimas',
+                'description' => 'Metinis PHP programuotojų susibūrimas aptarti geriausias praktikas, naujas PHP 8.3 funkcijas ir karkasų atnaujinimus. Įtraukia dirbtuves ir praktines sesijas.',
                 'date' => '2025-04-22',
-                'address' => 'Kaunas Congress Centre, K. Donelaičio g. 60, Kaunas, Lithuania',
+                'address' => 'Kauno Kongresų Centras, K. Donelaičio g. 60',
+                'country' => 'Lietuva',
+                'city' => 'Kaunas',
+                'participants_count' => 300,
             ],
             [
-                'title' => 'Cloud Computing & DevOps Conference',
-                'description' => 'Explore the world of cloud infrastructure, containerization with Docker and Kubernetes, CI/CD pipelines, and modern DevOps practices.',
+                'title' => 'Debesų Kompiuterijos ir DevOps Konferencija',
+                'description' => 'Susipažinkite su debesų infrastruktūros pasauliu, kontainerizacija naudojant Docker ir Kubernetes, CI/CD procesais bei šiuolaikinėmis DevOps praktikomis.',
                 'date' => '2025-05-10',
-                'address' => 'Vilnius Conference Hall, Konstitucijos pr. 26, Vilnius, Lithuania',
+                'address' => 'Vilniaus Konferencijų Salė, Konstitucijos pr. 26',
+                'country' => 'Lietuva',
+                'city' => 'Vilnius',
+                'participants_count' => 400,
             ],
             [
-                'title' => 'AI and Machine Learning Symposium',
-                'description' => 'Deep dive into artificial intelligence, machine learning algorithms, neural networks, and practical applications in modern software development.',
+                'title' => 'Dirbtinio Intelekto ir Mašininio Mokymosi Simpoziumas',
+                'description' => 'Giliai panerkite į dirbtinį intelektą, mašininio mokymosi algoritmus, neuroninius tinklus ir praktinį pritaikymą šiuolaikinėje programinės įrangos kūrime.',
                 'date' => '2025-06-18',
-                'address' => 'Klaipėda Science and Technology Park, Mokslininku g. 4, Klaipėda, Lithuania',
+                'address' => 'Klaipėdos Mokslo ir Technologijų Parkas, Mokslininku g. 4',
+                'country' => 'Lietuva',
+                'city' => 'Klaipėda',
+                'participants_count' => 250,
             ],
             [
-                'title' => 'Cybersecurity & Data Privacy Forum',
-                'description' => 'Critical discussions on cybersecurity threats, data protection regulations (GDPR), secure coding practices, and privacy-first development approaches.',
+                'title' => 'Kibernetinio Saugumo ir Duomenų Privatumo Forumas',
+                'description' => 'Kritinės diskusijos apie kibernetinio saugumo grėsmes, duomenų apsaugos reglamentus (BDAR), saugaus kodavimo praktikas ir privatumą pirmenybę teikiančius kūrimo metodus.',
                 'date' => '2025-07-25',
-                'address' => 'Vilnius University, Universiteto g. 3, Vilnius, Lithuania',
+                'address' => 'Vilniaus Universitetas, Universiteto g. 3',
+                'country' => 'Lietuva',
+                'city' => 'Vilnius',
+                'participants_count' => 350,
             ],
         ];
 

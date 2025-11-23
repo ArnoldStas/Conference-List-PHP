@@ -33,6 +33,7 @@ return [
     // Field must have minimum length
     'min' => [
         'string' => 'Laukas :attribute turi būti bent :min simbolių.',
+        'numeric' => 'Laukas :attribute turi būti bent :min.',
     ],
 
     // Field must have maximum length
@@ -84,6 +85,9 @@ return [
         'description' => 'aprašymas',
         'date' => 'data',
         'address' => 'adresas',
+        'country' => 'šalis',
+        'city' => 'miestas',
+        'participants_count' => 'dalyvių skaičius',
         'email' => 'el. paštas',
         'password' => 'slaptažodis',
         'name' => 'vardas',

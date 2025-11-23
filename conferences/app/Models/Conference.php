@@ -5,12 +5,15 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 class Conference extends Model
 {
-    
+
     protected $fillable = [
-        'title',   
+        'title',
         'description',
         'date',
         'address',
+        'country',
+        'city',
+        'participants_count',
     ];
 
 

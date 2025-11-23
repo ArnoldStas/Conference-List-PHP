@@ -15,6 +15,9 @@ return new class extends Migration
             $table->text('description');
             $table->date('date');
             $table->string('address');
+            $table->string('country');
+            $table->string('city');
+            $table->integer('participants_count')->unsigned();
             $table->timestamps();
         });
     }

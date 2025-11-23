@@ -51,7 +51,7 @@
         class="form-control @error('date') is-invalid @enderror"
         id="date"
         name="date"
-        value="{{ old('date', ($conference ?? null)?->date?->format('Y-m-d') ?? '') }}"
+        value="{{ old('date', isset($conference) && $conference->date ? $conference->date->format('Y-m-d') : '') }}"
         required
     >
 
@@ -83,9 +83,73 @@
     @enderror
 </div>
 
+<div class="mb-3">
+    <label for="country" class="form-label">
+        {{ __('messages.country') }} <span class="text-danger">*</span>
+    </label>
+    <input
+        type="text"
+        class="form-control @error('country') is-invalid @enderror"
+        id="country"
+        name="country"
+        value="{{ old('country', $conference->country ?? '') }}"
+        required
+        placeholder="{{ __('messages.enter_country') }}"
+    >
+
+    @error('country')
+        <div class="invalid-feedback">
+            {{ $message }}
+        </div>
+    @enderror
+</div>
+
+<div class="mb-3">
+    <label for="city" class="form-label">
+        {{ __('messages.city') }} <span class="text-danger">*</span>
+    </label>
+    <input
+        type="text"
+        class="form-control @error('city') is-invalid @enderror"
+        id="city"
+        name="city"
+        value="{{ old('city', $conference->city ?? '') }}"
+        required
+        placeholder="{{ __('messages.enter_city') }}"
+    >
+
+    @error('city')
+        <div class="invalid-feedback">
+            {{ $message }}
+        </div>
+    @enderror
+</div>
+
+<div class="mb-3">
+    <label for="participants_count" class="form-label">
+        {{ __('messages.participants_count') }} <span class="text-danger">*</span>
+    </label>
+    <input
+        type="number"
+        class="form-control @error('participants_count') is-invalid @enderror"
+        id="participants_count"
+        name="participants_count"
+        value="{{ old('participants_count', $conference->participants_count ?? '') }}"
+        required
+        min="1"
+        placeholder="{{ __('messages.enter_participants_count') }}"
+    >
+
+    @error('participants_count')
+        <div class="invalid-feedback">
+            {{ $message }}
+        </div>
+    @enderror
+</div>
+
 <div class="d-flex gap-2">
 
-    <button type="submit" class="btn btn-primary">
+    <button type="submit" class="btn text-white" style="background-color: #ff6600;">
         {{ __('messages.save') }}
     </button>
 

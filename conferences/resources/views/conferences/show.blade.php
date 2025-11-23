@@ -20,7 +20,7 @@
 
 
         <div class="card shadow-sm">
-            <div class="card-header bg-info text-white">
+            <div class="card-header text-white" style="background-color: #ff6600;">
                 <h4 class="mb-0">{{ __('messages.conference_details') }}</h4>
             </div>
 
@@ -51,6 +51,21 @@
                 <div class="mb-4">
                     <h5 class="text-muted">{{ __('messages.conference_address') }}</h5>
                     <p class="fs-5">{{ $conference->address }}</p>
+                </div>
+
+                <div class="mb-4">
+                    <h5 class="text-muted">{{ __('messages.country') }}</h5>
+                    <p class="fs-5">{{ $conference->country }}</p>
+                </div>
+
+                <div class="mb-4">
+                    <h5 class="text-muted">{{ __('messages.city') }}</h5>
+                    <p class="fs-5">{{ $conference->city }}</p>
+                </div>
+
+                <div class="mb-4">
+                    <h5 class="text-muted">{{ __('messages.participants_count') }}</h5>
+                    <p class="fs-5">{{ $conference->participants_count }}</p>
                 </div>
 
                 @auth

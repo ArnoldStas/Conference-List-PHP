@@ -29,6 +29,9 @@ return [
     'conference_date' => 'Data',
     'conference_address' => 'Adresas',
     'conference_details' => 'Konferencijos informacija',
+    'country' => 'Šalis',
+    'city' => 'Miestas',
+    'participants_count' => 'Dalyvių skaičius',
 
     // Forms
     'create_conference' => 'Sukurti konferenciją',
@@ -44,6 +47,9 @@ return [
     'enter_description' => 'Įveskite aprašymą',
     'select_date' => 'Pasirinkite datą',
     'enter_address' => 'Įveskite adresą',
+    'enter_country' => 'Įveskite šalį',
+    'enter_city' => 'Įveskite miestą',
+    'enter_participants_count' => 'Įveskite dalyvių skaičių',
 
     // Authentication
     'email' => 'El. paštas',
