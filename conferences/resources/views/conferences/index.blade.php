@@ -13,12 +13,12 @@
 <div class="row">
     <div class="col-12">
 
-        <div class="d-flex justify-content-between align-items-center mb-4">
+        <div class="d-flex justify-content-between align-items-center mb-5">
             <h1>{{ __('messages.conferences_list') }}</h1>
 
             @auth
-                <a href="{{ route('conferences.create') }}" class="btn text-white" style="background-color: #ff6600;">
-                    <i class="bi bi-plus-circle"></i>
+                <a href="{{ route('conferences.create') }}" class="btn btn-orange btn-lg">
+                    <i class="bi bi-plus-circle me-2"></i>
                     {{ __('messages.add_conference') }}
                 </a>
             @endauth
@@ -59,17 +59,17 @@
                         </div>
 
                         <div class="col-md-4 d-flex align-items-center justify-content-end">
-                            <div class="btn-group" role="group">
-                                
+                            <div class="d-flex gap-2" role="group">
                                 <a href="{{ route('conferences.show', $conference) }}"
-                                   class="btn btn-sm btn-info text-white">
+                                   class="btn btn-info text-white">
+                                    <i class="bi bi-eye me-1"></i>
                                     {{ __('messages.view') }}
                                 </a>
 
                                 @auth
-                                    {{-- Edit button --}}
                                     <a href="{{ route('conferences.edit', $conference) }}"
-                                       class="btn btn-sm btn-warning text-white">
+                                       class="btn btn-orange text-white">
+                                        <i class="bi bi-pencil me-1"></i>
                                         {{ __('messages.edit') }}
                                     </a>
 
@@ -78,9 +78,9 @@
                                           class="d-inline"
                                           onsubmit="return confirm('{{ __('messages.confirm_delete') }}')">
                                         @csrf
-                                        
                                         @method('DELETE')
-                                        <button type="submit" class="btn btn-sm btn-danger">
+                                        <button type="submit" class="btn btn-danger">
+                                            <i class="bi bi-trash me-1"></i>
                                             {{ __('messages.delete') }}
                                         </button>
                                     </form>

@@ -1,10 +1,200 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
+/* Base Typography - Make everything bigger */
+body {
+    font-size: 1.125rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+/* Conference Cards */
 .conference-card {
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    margin-bottom: 1.5rem !important;
 }
 
 .conference-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 20px rgba(255, 102, 0, 0.15);
+}
+
+.conference-card .card-body {
+    padding: 1.75rem;
+}
+
+.conference-card .card-title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.conference-card .card-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Orange Button Styles */
+.btn-orange {
+    background-color: #ff6600;
+    border-color: #ff6600;
+    color: white;
+    font-size: 1.1rem;
+    padding: 0.625rem 1.5rem;
+    font-weight: 500;
+    border-radius: 0.375rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(255, 102, 0, 0.2);
+}
+
+.btn-orange:hover {
+    background-color: #e65c00;
+    border-color: #e65c00;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 102, 0, 0.3);
+}
+
+.btn-orange:active,
+.btn-orange:focus {
+    background-color: #cc5200;
+    border-color: #cc5200;
+    color: white;
+    box-shadow: 0 2px 4px rgba(255, 102, 0, 0.4);
+}
+
+/* Button Size Improvements */
+.btn {
+    font-size: 1.05rem;
+    padding: 0.625rem 1.25rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-sm {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+/* Enhanced Button Hover Effects */
+.btn-primary:hover,
+.btn-secondary:hover,
+.btn-danger:hover,
+.btn-warning:hover,
+.btn-info:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-danger {
+    box-shadow: 0 2px 4px rgba(220, 53, 69, 0.2);
+}
+
+.btn-danger:hover {
+    box-shadow: 0 4px 12px rgba(220, 53, 69, 0.3);
+}
+
+.btn-warning {
+    box-shadow: 0 2px 4px rgba(255, 193, 7, 0.2);
+}
+
+.btn-warning:hover {
+    box-shadow: 0 4px 12px rgba(255, 193, 7, 0.3);
+}
+
+.btn-info {
+    box-shadow: 0 2px 4px rgba(13, 202, 240, 0.2);
+}
+
+.btn-info:hover {
+    box-shadow: 0 4px 12px rgba(13, 202, 240, 0.3);
+}
+
+.btn-secondary {
+    box-shadow: 0 2px 4px rgba(108, 117, 125, 0.2);
+}
+
+.btn-secondary:hover {
+    box-shadow: 0 4px 12px rgba(108, 117, 125, 0.3);
+}
+
+/* Form Input Improvements */
+.form-control,
+.form-select {
+    font-size: 1.1rem;
+    padding: 0.75rem 1rem;
+    border-radius: 0.375rem;
+    border: 2px solid #dee2e6;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #ff6600;
+    box-shadow: 0 0 0 0.2rem rgba(255, 102, 0, 0.15);
+}
+
+.form-label {
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-bottom: 0.625rem;
+}
+
+textarea.form-control {
+    min-height: 150px;
+}
+
+/* Card Enhancements */
+.card {
+    border-radius: 0.5rem;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.card-header {
+    padding: 1.25rem 1.5rem;
+    border-radius: 0.5rem 0.5rem 0 0 !important;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+/* Alert Improvements */
+.alert {
+    font-size: 1.1rem;
+    padding: 1rem 1.25rem;
+    border-radius: 0.5rem;
+}
+
+/* Main Content Spacing */
+main.py-4 {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+}
+
+/* Navbar Text Alignment */
+.navbar-text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+/* Button Group Improvements */
+.btn-group .btn {
+    border: none;
 }

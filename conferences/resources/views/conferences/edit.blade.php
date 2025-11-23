@@ -10,14 +10,13 @@
 
 @section('content')
 <div class="row justify-content-center">
-    <div class="col-md-8">
-        {{-- Page card with form --}}
+    <div class="col-md-10">
         <div class="card shadow-sm">
             <div class="card-header text-white" style="background-color: #ff6600;">
                 <h4 class="mb-0">{{ __('messages.edit_conference') }}</h4>
             </div>
 
-            <div class="card-body">
+            <div class="card-body p-4">
                 
                 <form method="POST" action="{{ route('conferences.update', $conference) }}">
                     @csrf

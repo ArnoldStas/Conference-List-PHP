@@ -25,27 +25,24 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto align-items-center">
                     @auth
-
-                        <li class="nav-item">
-                            <span class="navbar-text text-white me-3">
+                        <li class="nav-item me-3">
+                            <span class="navbar-text text-white mb-0">
                                 {{ __('messages.welcome') }}, {{ Auth::user()->name }}
                             </span>
                         </li>
                         <li class="nav-item">
-
                             <form action="{{ route('logout') }}" method="POST" class="d-inline">
                                 @csrf
-                                <button type="submit" class="btn btn-outline-light">
+                                <button type="submit" class="btn btn-outline-light btn-lg">
                                     {{ __('messages.logout') }}
                                 </button>
                             </form>
                         </li>
                     @else
-
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('login') }}">
+                            <a class="nav-link btn btn-outline-light" href="{{ route('login') }}">
                                 {{ __('messages.login') }}
                             </a>
                         </li>
