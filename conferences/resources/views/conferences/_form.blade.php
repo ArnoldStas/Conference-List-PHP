@@ -149,12 +149,10 @@
 
 <div class="d-flex gap-3 mt-4">
     <button type="submit" class="btn btn-orange btn-lg">
-        <i class="bi bi-check-circle me-2"></i>
         {{ __('messages.save') }}
     </button>
 
     <a href="{{ route('conferences.index') }}" class="btn btn-secondary btn-lg">
-        <i class="bi bi-x-circle me-2"></i>
         {{ __('messages.cancel') }}
     </a>
 </div>

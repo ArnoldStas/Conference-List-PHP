@@ -14,7 +14,6 @@
 
         <div class="mb-4">
             <a href="{{ route('conferences.index') }}" class="btn btn-secondary">
-                <i class="bi bi-arrow-left me-2"></i>
                 {{ __('messages.conferences_list') }}
             </a>
         </div>
@@ -70,7 +69,6 @@
                 @auth
                     <div class="d-flex gap-3 mt-4">
                         <a href="{{ route('conferences.edit', $conference) }}" class="btn btn-orange btn-lg">
-                            <i class="bi bi-pencil me-2"></i>
                             {{ __('messages.edit') }}
                         </a>
 
@@ -80,7 +78,6 @@
                             @csrf
                             @method('DELETE')
                             <button type="submit" class="btn btn-danger btn-lg">
-                                <i class="bi bi-trash me-2"></i>
                                 {{ __('messages.delete') }}
                             </button>
                         </form>
