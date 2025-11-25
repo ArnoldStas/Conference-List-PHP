@@ -18,7 +18,6 @@
 
             @auth
                 <a href="{{ route('conferences.create') }}" class="btn btn-orange btn-lg">
-                    <i class="bi bi-plus-circle me-2"></i>
                     {{ __('messages.add_conference') }}
                 </a>
             @endauth
@@ -62,14 +61,12 @@
                             <div class="d-flex gap-2" role="group">
                                 <a href="{{ route('conferences.show', $conference) }}"
                                    class="btn btn-info text-white">
-                                    <i class="bi bi-eye me-1"></i>
                                     {{ __('messages.view') }}
                                 </a>
 
                                 @auth
                                     <a href="{{ route('conferences.edit', $conference) }}"
                                        class="btn btn-orange text-white">
-                                        <i class="bi bi-pencil me-1"></i>
                                         {{ __('messages.edit') }}
                                     </a>
 
@@ -80,7 +77,6 @@
                                         @csrf
                                         @method('DELETE')
                                         <button type="submit" class="btn btn-danger">
-                                            <i class="bi bi-trash me-1"></i>
                                             {{ __('messages.delete') }}
                                         </button>
                                     </form>
