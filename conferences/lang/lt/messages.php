@@ -1,11 +1,5 @@
 <?php
 
-/**
- * Lithuanian Language File - Application Messages
- * Contains all UI texts used throughout the application
- * Usage: __('messages.key_name') in blade templates or controllers
- */
-
 return [
     // Navigation and general UI
     'welcome' => 'Sveiki',

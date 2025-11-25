@@ -82,7 +82,7 @@
             <div class="card-footer text-muted text-center">
                 <small>
 
-                    <strong>Demo:</strong> admin@conferences.lt / root
+                    <strong>Prisijungimai:</strong> admin@conferences.lt / root
                 </small>
             </div>
         </div>
